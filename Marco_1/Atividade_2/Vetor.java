@@ -12,6 +12,7 @@ public class Vetor {
 
     public Vetor() {
         vetor = new Aluno[3];
+        total = 0;
     }
 
     public void adiciona(Aluno aluno) {
