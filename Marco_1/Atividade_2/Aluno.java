@@ -36,5 +36,12 @@ public class Aluno {
         this.nota = nota;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        Aluno outro = (Aluno) obj;
+        return this.nome.equals(outro.nome) && this.idade == outro.idade && this.nota == outro.nota;
+    }
+
+
 
 }

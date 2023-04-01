@@ -6,6 +6,8 @@ public class Main {
 
         Aluno aluno1 = new Aluno("João", 20, 7.5);
         Aluno aluno2 = new Aluno("Maria", 19, 8.5);
+        
+        Aluno aluno3 = new Aluno("João", 20, 7.5);
 
         Vetor vetAlunos = new Vetor();
         vetAlunos.adiciona(aluno1);
@@ -14,5 +16,6 @@ public class Main {
         System.out.println(vetAlunos.getTamanho());
         System.out.println(vetAlunos.contem(aluno2));
         System.out.println(vetAlunos.getTamanho());
+        System.out.println(vetAlunos.contem(aluno3));
     }    
 }

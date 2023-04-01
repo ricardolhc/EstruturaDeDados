@@ -3,10 +3,11 @@ package Marco_1.Atividade_2;
 public class Vetor {
 
     private Aluno[] vetor;
-    private int total = 0;
+    private int total;
 
     public Vetor(int tamanhoMaximo) {
         vetor = new Aluno[tamanhoMaximo];
+        total = 0;
     }
 
     public Vetor() {
