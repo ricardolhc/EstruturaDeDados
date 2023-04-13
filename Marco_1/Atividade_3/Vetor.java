@@ -71,13 +71,4 @@ public class Vetor implements IVetor {
         }
         return false;
     }
-
-    
-
-
-
-
-
-
-
 }
