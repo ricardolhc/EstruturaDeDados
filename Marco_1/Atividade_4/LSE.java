@@ -85,14 +85,9 @@ public class LSE implements Lista {
         String lista = "";
 
         for(Noh i = inicio; i != null; i = i.getProximo()) {
-            lista += i.getInfo() + ", ";
+            lista += i.getInfo() + " ";
         }
 
         return lista;
-
     }
-    
-
-
-    
 }
