@@ -1,6 +1,6 @@
 package Marco_1.Atividade_3;
 
-public interface IVetor {
+public interface IVetorAluno {
     
     public void adiciona(Aluno aluno);
     public int getTamanho();

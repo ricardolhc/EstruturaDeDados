@@ -1,6 +1,6 @@
 package Marco_1.Atividade_3;
 
-public class Vetor implements IVetor {
+public class Vetor implements IVetorAluno {
 
     private Aluno[] vetor;
     private int total;
