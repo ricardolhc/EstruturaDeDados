@@ -6,14 +6,14 @@ O objetivo deste repositório é arquivar e demonstrar a programação realizada
 ## Divisões do Repositório
 O repositório está dividido em pastas, onde cada pasta é abordado um novo assunto da programação, esses assuntos são apresentados pelo professor da Unipampa. Abaixo contém uma lista interativa que estão neste repositório, onde, ao clicar, será direcionado para a respectiva pasta.
 
-### [01. Revisão e TAD](./Atividade_1)
+### [01. Revisão e TAD](./Marco_1/Atividade_1)
 
-### [02. Revisão Vetores e Problema de Inserção de Dados](./Atividade_2)
+### [02. Revisão Vetores e Problema de Inserção de Dados](./Marco_1/Atividade_2)
 
-### [03. Remover Item do Vetor](./Atividade_3)
+### [03. Remover Item do Vetor](./Marco_1/Atividade_3)
 
-### [04. Lista Simplesmente Encadeada (LSE)](./Atividade_4)
+### [04. Lista Simplesmente Encadeada (LSE)](./Marco_1/Atividade_4)
 
-### [05. Lista Duplamente Encadeada de Inteiros (LDE)](./Atividade_5)
+### [05. Lista Duplamente Encadeada de Inteiros (LDE)](./Marco_1/Atividade_5)
 
-### [06. Lista Duplamente Encadeada Genérica (LDE)](./Atividade_6)
+### [06. Lista Duplamente Encadeada Genérica (LDE)](./Marco_1/Atividade_6)
