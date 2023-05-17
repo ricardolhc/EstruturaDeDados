@@ -1,0 +1,48 @@
+package com.group.Marco_1.Atividade_8;
+
+public class Vetor {
+
+    private int[] vetor;
+    private int total;
+
+    public Vetor(int tamanhoMaximo) {
+        vetor = new int[tamanhoMaximo];
+        total = 0;
+    }
+
+    public void adiciona(int numero) {
+        vetor[total] = numero;
+        total++;
+    }
+
+    public boolean contem(int numero) {
+        for (int i = 0; i < total; i++) {
+            if (vetor[i] == numero) {
+                return true;
+            } 
+        }
+        return false;
+    }
+
+    public int getTamanho() {
+        return total;
+    }
+
+    public boolean buscaBinariaIterativa(int numero) {
+        int inicio = 0;
+        int fim = total - 1;
+
+        while (inicio <= fim) {
+            int meio = (inicio + fim) / 2;
+            if (vetor[meio] == numero) {
+                return true;
+            } else if (vetor[meio] < numero) {
+                inicio = meio + 1;
+            } else {
+                fim = meio - 1;
+            }
+        }
+        return false;
+    }
+
+}
