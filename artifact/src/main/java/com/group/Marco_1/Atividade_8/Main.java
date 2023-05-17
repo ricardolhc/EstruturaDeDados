@@ -24,7 +24,7 @@ public class Main {
 
         long duracao = tempoFinal - tempoComeco;
 
-        System.out.println("Busca iterativa: " + buscaBinariaIterativa + "; Tempo: " + duracao + "ns");
+        System.out.println("Busca iterativa; Encontrado: " + buscaBinariaIterativa + "; Tempo: " + duracao + "ns");
 
         tempoComeco = System.nanoTime();
         boolean buscaBinariaRecursiva = vetor.buscaBinariaRecursiva(numeroAleatorio);
@@ -32,6 +32,6 @@ public class Main {
 
         duracao = tempoFinal - tempoComeco;
 
-        System.out.println("Busca recursiva: " + buscaBinariaRecursiva + "; Tempo: " + duracao + "ns");
+        System.out.println("Busca recursiva; Encontrado: " + buscaBinariaRecursiva + "; Tempo: " + duracao + "ns");
     }
 }
