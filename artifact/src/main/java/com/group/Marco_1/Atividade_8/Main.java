@@ -16,7 +16,20 @@ public class Main {
             vetor.adiciona(numeroAleatorio);
         }
 
-        
+        long tempoComeco = System.nanoTime();
+        boolean buscaBinariaIterativa = vetor.buscaBinariaIterativa(500);
+        long tempoFinal = System.nanoTime();
 
+        long duracao = tempoFinal - tempoComeco;
+
+        System.out.println("Busca iterativa: " + buscaBinariaIterativa + "; Tempo: " + duracao + "ns");
+
+        tempoComeco = System.nanoTime();
+        boolean buscaBinariaRecursiva = vetor.buscaBinariaRecursiva(500);
+        tempoFinal = System.nanoTime();
+
+        duracao = tempoFinal - tempoComeco;
+
+        System.out.println("Busca recursiva: " + buscaBinariaRecursiva + "; Tempo: " + duracao + "ns");
     }
 }

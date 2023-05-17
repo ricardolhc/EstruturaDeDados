@@ -45,4 +45,23 @@ public class Vetor {
         return false;
     }
 
+    public boolean buscaBinariaRecursiva(int numero) {
+        return buscaBinariaRecursiva(numero, 0, total - 1);
+    }
+
+    private boolean buscaBinariaRecursiva(int numero, int inicio, int fim) {
+        if (inicio > fim) {
+            return false;
+        }
+
+        int meio = (inicio + fim) / 2;
+        if (vetor[meio] == numero) {
+            return true;
+        } else if (vetor[meio] < numero) {
+            return buscaBinariaRecursiva(numero, meio + 1, fim);
+        } else {
+            return buscaBinariaRecursiva(numero, inicio, meio - 1);
+        }
+    }
+
 }
