@@ -5,7 +5,7 @@ import java.util.Random;
 public class Main {
 
     public static void main(String[] args) throws InterruptedException {
-        int n = 1000;
+        int n = 10000;
 
         Random gerador = new Random();
 
@@ -16,8 +16,10 @@ public class Main {
             vetor.adiciona(numeroAleatorio);
         }
 
+        int numeroAleatorio = gerador.nextInt(1000);
+
         long tempoComeco = System.nanoTime();
-        boolean buscaBinariaIterativa = vetor.buscaBinariaIterativa(500);
+        boolean buscaBinariaIterativa = vetor.buscaBinariaIterativa(numeroAleatorio);
         long tempoFinal = System.nanoTime();
 
         long duracao = tempoFinal - tempoComeco;
@@ -25,7 +27,7 @@ public class Main {
         System.out.println("Busca iterativa: " + buscaBinariaIterativa + "; Tempo: " + duracao + "ns");
 
         tempoComeco = System.nanoTime();
-        boolean buscaBinariaRecursiva = vetor.buscaBinariaRecursiva(500);
+        boolean buscaBinariaRecursiva = vetor.buscaBinariaRecursiva(numeroAleatorio);
         tempoFinal = System.nanoTime();
 
         duracao = tempoFinal - tempoComeco;
