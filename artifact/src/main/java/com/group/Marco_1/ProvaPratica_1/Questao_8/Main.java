@@ -1,8 +1,10 @@
 package com.group.Marco_1.ProvaPratica_1.Questao_8;
 
-// (Questão 5) Implemente um método que retorna o número de elementos pares da lista duplamente encadeada. 
-// Este método deve possuir o seguinte protótipo:
-// public int nroPares();
+// Questão 8) Implemente um método que concatene duas listas duplamente encadeadas de números inteiros. 
+// Por exemplo, dada a LDE [1,2,3,4] e outra LDE [5,6,7, 8] o resultado será uma nova LDE resultante da 
+// concatenação das duas anteriores [1,2,3,4,5,6,7,8]. O protótipo é o seguinte:
+// public void concat(LDE l);
+
 
 public class Main {
 
