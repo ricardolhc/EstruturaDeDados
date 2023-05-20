@@ -5,7 +5,7 @@ package com.group.Marco_1.ProvaPratica_1.Questao_6;
 // ocorrerá entre os elementos 5 e 7. O protótipo do método deve ser o seguinte. Explique no seu PIÁ a 
 // complexidade para o pior caso. 
 // public void add_ordenado(int info);
-// 3n + 8
+// 3n + 11
 
 
 public class Main {
