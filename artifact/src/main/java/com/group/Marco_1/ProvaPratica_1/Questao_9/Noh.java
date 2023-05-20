@@ -14,6 +14,10 @@ public class Noh {
         return this.info;
     }
 
+    public void setInfo(Object info) {
+        this.info = info;
+    }
+
     public Noh getProximo() { 
         return this.proximo;
     }

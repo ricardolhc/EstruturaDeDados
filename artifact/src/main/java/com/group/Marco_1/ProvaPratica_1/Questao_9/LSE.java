@@ -94,6 +94,15 @@ public class LSE implements Lista {
     @Override
     public void bubbleSort() {
 
+        for(Noh i = inicio; i != null; i = i.getProximo()) {
+            for(Noh j = inicio; j != null; j = j.getProximo()) {
+                if((int) i.getInfo() < (int) j.getInfo()) {
+                    Object aux = i.getInfo();
+                    i.setInfo(j.getInfo());
+                    j.setInfo(aux);
+                }
+            }
+        }
         
 
     }
