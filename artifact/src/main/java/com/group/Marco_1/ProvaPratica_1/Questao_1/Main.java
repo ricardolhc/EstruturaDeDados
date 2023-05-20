@@ -14,18 +14,18 @@ public class Main {
 
         int n = 0;
 
-        System.out.print("Digite um número: ");
+        System.out.print("Digite a dimensão do vetor: ");
         n = sc.nextInt();
 
         int[] arr1 = new int[n];
         int[] arr2 = new int[n];
 
-        System.out.print("Digite os valores do primeiro vetor: ");
+        System.out.println("Digite os valores do primeiro vetor: ");
         for (int i = 0; i < n; i++) {
             arr1[i] = sc.nextInt();
         }
 
-        System.out.print("Digite os valores do segundo vetor: ");
+        System.out.println("Digite os valores do segundo vetor: ");
         for (int i = 0; i < n; i++) {
             arr2[i] = sc.nextInt();
         }
