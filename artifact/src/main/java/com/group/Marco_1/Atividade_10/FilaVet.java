@@ -47,14 +47,17 @@ public class FilaVet implements IFila {
 
     @Override
     public void imprimirFila() {
-        if(this.isEmpty()) {
-            System.out.println("Filá vazia!");
+        if (isEmpty()) {
+            System.out.println("Fila vazia!");
             return;
         }
-        int fim = (inicio + numeroElementosFila) % vetFila.length;
-        for(int i = inicio; i < fim; i++) {
-            System.out.println(vetFila[i]);
+    
+        int indice = inicio;
+        for (int i = 0; i < numeroElementosFila; i++) {
+            System.out.print(vetFila[indice] + " ");
+            indice = (indice + 1) % vetFila.length;
         }
+        System.out.println();
     }
 
 }
