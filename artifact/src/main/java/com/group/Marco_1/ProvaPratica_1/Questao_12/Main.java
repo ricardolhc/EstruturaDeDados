@@ -12,9 +12,14 @@ package com.group.Marco_1.ProvaPratica_1.Questao_12;
  * Caso 1: n = m retorna o próprio valor de n ou m, visto que k não precisa variar pois m já atingiu n, e também k não
  * existe no algoritmo visto que ele é recursivo
  * 
+ * Edit: k existe no algoritmo, mas não explicitamente, visto que m + 1 seria o k, mas estou apenas passando o valor já 
+ * somado
+ * 
  * Caso 2: n > m, k deve variar de m até n, somando os valores de k a cada iteração, entretando visto que a atividade
  * pediu que seja recursiva, k não existe no algoritmo
  * 
+ * Edit: k existe no algoritmo, mas não explicitamente, visto que m + 1 seria o k, mas estou apenas passando o valor já 
+ * somado
  */
 
 import java.util.Scanner;
