@@ -1,5 +1,22 @@
 package com.group.Marco_1.ProvaPratica_1.Questao_12;
 
+
+// Implemente, em Java, um método recursivo que representa a definição matemática recursiva a seguir. Além disso, 
+// responda: a implementação recursiva seria sua primeira opção para resolver o problema do somatório de números inteiros? 
+// Justifique sua resposta, mostrando matematicamente o porquê!
+
+
+/*
+ * ANOTAÇÕES
+ * 
+ * Caso 1: n = m retorna o próprio valor de n ou m, visto que k não precisa variar pois m já atingiu n, e também k não
+ * existe no algoritmo visto que ele é recursivo
+ * 
+ * Caso 2: n > m, k deve variar de m até n, somando os valores de k a cada iteração, entretando visto que a atividade
+ * pediu que seja recursiva, k não existe no algoritmo
+ * 
+ */
+
 import java.util.Scanner;
 
 public class Main {
