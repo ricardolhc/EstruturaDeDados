@@ -63,5 +63,41 @@ public class PilhaLista implements IPilha {
 
         return cont;
     }
+
+    public boolean isPalindromo() {
+
+        PilhaLista pilha = new PilhaLista();
+        Noh aux = topo;
+
+        while(aux != null) {
+            pilha.push(aux.getInfo());
+            aux = aux.getProximo();
+        }
+
+        aux = topo;
+
+        while(aux != null) {
+            if(!aux.getInfo().equals(pilha.pop())) {
+                return false;
+            }
+            aux = aux.getProximo();
+        }
+
+        return true;
+
+    }
+
+    @Override
+    public String toString() {
+        String str = "";
+        Noh aux = topo;
+
+        while(aux != null) {
+            str += aux.getInfo() + " ";
+            aux = aux.getProximo();
+        }
+
+        return str;
+    }
     
 }
