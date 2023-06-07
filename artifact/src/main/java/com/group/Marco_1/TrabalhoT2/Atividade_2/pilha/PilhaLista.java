@@ -1,4 +1,6 @@
-package com.group.Marco_1.Atividade_12;
+package com.group.Marco_1.TrabalhoT2.Atividade_2.pilha;
+
+import com.group.Marco_1.TrabalhoT2.Atividade_2.entities.Aluno;
 
 public class PilhaLista implements IPilha {
 
@@ -9,7 +11,7 @@ public class PilhaLista implements IPilha {
     }
 
     @Override
-    public boolean push(Object info) {
+    public boolean push(Aluno info) {
         Noh novo = new Noh(info);
 
         if(isEmpty()) {
@@ -23,8 +25,8 @@ public class PilhaLista implements IPilha {
     }
 
     @Override
-    public Object pop() {
-        Object info = null;
+    public Aluno pop() {
+        Aluno info = null;
 
         if(!isEmpty()) {
             info = topo.getInfo();
@@ -35,8 +37,8 @@ public class PilhaLista implements IPilha {
     }
 
     @Override
-    public Object top() {
-        Object info = null;
+    public Aluno top() {
+        Aluno info = null;
 
         if(!isEmpty()) {
             info = topo.getInfo();
