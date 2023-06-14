@@ -74,27 +74,48 @@ public class MapaHashLSE {
         }
     }
 
-    public void resize() {
+    private void resize() {
         LSE[] novo_vetor = new LSE[this.vetor.length + 1];
 
+        rehash(novo_vetor);
+
+        this.vetor = novo_vetor;
+    }
+
+    private void rehash(LSE[] novoVetor) {
         for (int i = 0; i < this.vetor.length; i++) {
             LSE alunos_lista = this.vetor[i];
             if (alunos_lista != null) {
                 for (Noh n = alunos_lista.getInicio(); n != null; n = n.getProximo()) {
-                    int hash = n.getInfo().getMatricula() % novo_vetor.length;
-                    LSE nova_lista = novo_vetor[hash];
+                    int hash = n.getInfo().getMatricula() % novoVetor.length;
+                    LSE nova_lista = novoVetor[hash];
                     if (nova_lista == null) {
                         nova_lista = new LSE();
                         nova_lista.insereInicio(n.getInfo());
-                        novo_vetor[hash] = nova_lista;
+                        novoVetor[hash] = nova_lista;
                     } else {
                         nova_lista.insereInicio(n.getInfo());
                     }
                 }
             }
         }
-
-        this.vetor = novo_vetor;
     }
 
+
+
+
+    @Override
+    public String toString() {
+        String str = "";
+        for (int i = 0; i < this.vetor.length; i++) {
+            LSE alunos_lista = this.vetor[i];
+            if (alunos_lista != null) {
+                str += "Hash: " + i + "\n";
+                for (Noh n = alunos_lista.getInicio(); n != null; n = n.getProximo()) {
+                    str += n.getInfo().toString() + "\n";
+                }
+            }
+        }
+        return str;
+    }
 }
