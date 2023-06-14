@@ -66,6 +66,10 @@ public class MapaHashVetor {
     private void resize() {
         Aluno[] vetorAux = vetor;
         vetor = new Aluno[vetor.length + 1];
+        rehash(vetorAux);
+    }
+
+    private void rehash(Aluno[] vetorAux) {
         for(Aluno aluno : vetorAux) {
             if(aluno != null) {
                 put(aluno.getMatricula(), aluno);
