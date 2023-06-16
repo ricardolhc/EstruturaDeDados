@@ -81,23 +81,42 @@ public class AAB {
         }
     }
 
+    public boolean contains(int element) {
+        if (isEmpty()) {
+            return false;
+        }
+
+        Noh aux = this.raiz;
+        while (aux != null) {
+            if (element == aux.getValor()) {
+                return true;
+            } else if (element < aux.getValor()) {
+                aux = aux.getEsq();
+            } else {
+                aux = aux.getDir();
+            }
+        }
+
+        return false;
+    }
+
     @Override
     public String toString() {
         if(isEmpty()) {
             return "AAB está vazia";
         }
 
-        String conteudo = "";
+        StringBuilder conteudo = new StringBuilder();
 
         traverseInOrder(raiz, conteudo);
 
-        return conteudo;
+        return conteudo.toString();
     }
 
-    private void traverseInOrder(Noh node, String str) {
+    private void traverseInOrder(Noh node, StringBuilder str) {
         if (node != null) {
             traverseInOrder(node.getEsq(), str);
-            str = str + node.getValor() + " ";
+            str.append(node.getValor() + " ");
             traverseInOrder(node.getDir(), str);
         }
     }
